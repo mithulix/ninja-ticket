@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bought Ticket</title>
+
+    <!-- internal css -->
+    <style>
+        body {  font-family: 'Roboto', sans-serif;}
+        .boughtTicket { 
+            margin: 5% auto; width: 400px; background-color: #ffefef;
+            padding:1rem  3rem 1rem 3rem; border-radius: 1rem; color: #494949;
+            text-align: center;
+        }
+        button{
+            display: inline; width: 100%/2;padding: 10px;border-radius: 5px;
+            color: #fff;border: none; font-weight: 500; font-size: 1rem;
+            background-color:  #ff525b;cursor: pointer; margin:0 2rem;
+        }
+        .getValues {text-align: left;}
+    </style>
+
+</head>
+<body>
+    <!-- content -->
+    <div class="boughtTicket">
+        <h2>BOUGHT TICKET</h2><hr>
+        <div class="getValues">
+            <h3 id="b_firstClass">FirstClass Ticket : $</h3>
+            <h3 id="b_economicClass">Economic Ticket : $</h3>
+            <h3 id="b_TotalPrice">TotalPrice : $</h3>
+        </div><hr>
+        <button onclick="window.print()">Print Ticket</button>
+        <button onclick="window.close()">Exit Page</button>
+    </div>
+
+    <!-- script file -->
+    <script src="app.js"></script>
+</body>
+</html>
